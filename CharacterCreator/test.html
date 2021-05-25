@@ -1,0 +1,385 @@
+<html>
+	<head>
+		<title>Pokémon Character Sheet</title>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<meta charset="UTF-8">
+	</head>
+	<style>
+.flex
+{
+	display: -ms-flexbox;
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: flex;
+}
+.flex-stretch
+{
+	-webkit-align-items: stretch;
+	-moz-align-items: stretch;
+	-ms-align-items: stretch;
+	align-items: stretch;
+}
+.flex-center
+{
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+.flexBoxRow
+{
+	width: 100%;
+	height: 100%;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-flow: row nowrap;
+	-moz-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+}
+.flexBoxColumn
+{
+	width: 100%;
+	height: 100%;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-flex-flow: column nowrap;
+	-moz-flex-flow: column nowrap;
+	-ms-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+}
+.noFlexShrink
+{
+	-webkit-flex-shrink: 0;
+	-moz-flex-shrink: 0;
+	-ms-flex-shrink: 0;
+	flex-shrink: 0;
+}
+.flex1
+{
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1;
+}
+.flex2
+{
+	-webkit-box-flex: 2;
+	-moz-box-flex: 2;
+	-webkit-flex: 2;
+	-ms-flex: 2 2 auto;
+	flex: 2;
+}
+.flex3
+{
+	-webkit-box-flex: 3;
+	-moz-box-flex: 3;
+	-webkit-flex: 3;
+	-ms-flex: 3 3 auto;
+	flex: 3;
+}
+.flex5
+{
+	-webkit-box-flex: 5;
+	-moz-box-flex: 5;
+	-webkit-flex: 5;
+	-ms-flex: 5 5 auto;
+	flex: 5;
+}
+.red { background-color: #F00; }
+.green { background-color: #0F0; }
+.blue { background-color: #00F; }
+
+.wide
+{
+	width: 100%;
+}
+
+body
+{
+	padding: 20px;
+	margin: 0px;
+	font-family: arial, sans-serif;
+}
+
+table
+{
+	border-collapse: collapse;
+	padding: 0px;
+	margin: 0px;
+}
+
+td, th {
+	border: 1px solid #000;
+	text-align: left;
+	padding: 0px;
+}
+
+.positionAnchor
+{
+	position: relative;
+}
+.subtitle
+{
+	font-size: 10;
+	position: absolute;
+	left: 1;
+	top: 1;
+	word-wrap: normal;
+}
+.infoCell
+{
+	padding: 8px;
+	overflow: clip;
+}
+.noBorder
+{
+	border: 0px solid #000;
+}
+.noBorderRight
+{
+	border-right: 0px solid #000;
+}
+.noBorderBottom
+{
+	border-bottom: 0px solid #000;
+}
+.padTop
+{
+	padding-top: 12px;
+}
+h2
+{
+	padding: 6px;
+	margin: 0px;
+}
+.pokemonName
+{
+	font-size: 18pt;
+}
+
+	</style>
+	<body>
+		<div class="flex">
+			<table class="wide">
+			<tr>
+			<td class="noBorder">
+				<h2>Pokémon Information</h2>
+				<div class="flex flexBoxRow flex-stretch">
+					<div class="flex flex1">
+						<table class="wide">
+						<tr>
+							<td class="positionAnchor infoCell padTop noBorderRight">
+							<span class="subtitle">Name</span>&nbsp;&nbsp;<span class="pokemonName">Kecleon</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="positionAnchor infoCell padTop noBorderRight">
+							<span class="subtitle">Level</span>&nbsp;&nbsp;<span>30</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="positionAnchor infoCell padTop noBorderRight">
+							<span class="subtitle">Type</span>&nbsp;&nbsp;<span>Normal</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="positionAnchor infoCell padTop noBorderRight noBorderBottom">
+							<span class="subtitle">Ability</span>&nbsp;&nbsp;<span>Color Change</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="positionAnchor infoCell padTop noBorderRight noBorderBottom">
+							<span class="subtitle">Current HP</span>&nbsp;&nbsp;<span>58</span>
+							</td>
+						</tr>
+						</table>
+					</div>
+					<div class="flex flex2">
+						<table class="wide">
+						<tr>
+							<th class="infoCell">
+							Stat
+							</th>
+							<th class="infoCell">
+							Value
+							</th>
+							<th class="infoCell noBorderRight">
+							Game Value
+							</th>
+						</tr>
+						<tr>
+							<td class="infoCell">
+								Health
+							</td>
+							<td class="infoCell">
+								80
+							</td>
+							<td class="infoCell noBorderRight">
+								66 Max HP
+							</td>
+						</tr>
+						<tr>
+							<td class="infoCell">
+								Attack
+							</td>
+							<td class="infoCell">
+								70
+							</td>
+							<td class="infoCell noBorderRight">
+								3 dice
+							</td>
+						</tr>
+						<tr>
+							<td class="infoCell">
+								Defense
+							</td>
+							<td class="infoCell">
+								70
+							</td>
+							<td class="infoCell noBorderRight">
+								3 dice
+							</td>
+						</tr>
+						<tr>
+							<td class="infoCell">
+								Sp. Atk
+							</td>
+							<td class="infoCell">
+								70
+							</td>
+							<td class="infoCell noBorderRight">
+								3 dice
+							</td>
+						</tr>
+						<tr>
+							<td class="infoCell">
+								Sp. Def
+							</td>
+							<td class="infoCell">
+								70
+							</td>
+							<td class="infoCell noBorderRight">
+								3 dice
+							</td>
+						</tr>
+						<tr>
+							<td class="infoCell noBorderBottom">
+								Speed
+							</td>
+							<td class="infoCell noBorderBottom">
+								70
+							</td>
+							<td class="infoCell noBorderRight noBorderBottom">
+								3 dice, 12m range
+							</td>
+						</tr>
+						</table>
+					</div>
+					<div class="flex flex1">
+						<table class="wide tall">
+							<tr>
+							<td class="infoCell noBorderBottom">
+								<span>Weak to Fighting</span><br/>
+								<span>Resistant to Ghost</span><br/>
+								<span>Resistant to Electric</span><br/>
+							</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</tr>
+			</td>
+			<tr>
+			<td class="noBorder">
+				<table class="wide">
+					<tr>
+						<td class="positionAnchor infoCell padTop">
+							<span class="subtitle">Ability Description</span>&nbsp;&nbsp;<span>Color Change changes the ability-bearer's type, when hit by a damage dealing move, to the type of that move. For example being hit by X Scissor will change the Pokémon to Bug-type. Dual-type Pokémon change to single-types. If a Pokémon with Color Change has a Substitute, the ability does not activate. Color Change activates for the last strike of a multi-hit move.</span>
+						</td>
+					</tr>
+				</table>
+			</td>
+			</tr>
+			<tr>
+			<td class="noBorder">
+				<h2>Moves</h2>
+				<table class="wide">
+					<tr>
+						<td class="positionAnchor infoCell padTop noBorderBottom">
+							<span class="subtitle">Name</span>&nbsp;&nbsp;<span>Petal Dance</span>
+						</td>
+						<td class="positionAnchor infoCell padTop noBorderBottom">
+							<span class="subtitle">Type</span>&nbsp;&nbsp;<span>Grass</span>
+						</td>
+						<td class="positionAnchor infoCell padTop noBorderBottom">
+							<span class="subtitle">Category</span>&nbsp;&nbsp;<span>Special</span>
+						</td>
+						<td class="positionAnchor infoCell padTop noBorderBottom">
+							<span class="subtitle">Power</span>&nbsp;&nbsp;<span>70</span>
+						</td>
+						<td class="positionAnchor infoCell padTop noBorderBottom">
+							<span class="subtitle">Atk.&nbsp;Dice</span>&nbsp;&nbsp;<span>3</span>
+						</td>
+						<td class="positionAnchor infoCell padTop noBorderBottom">
+							<span class="subtitle">Accuracy</span>&nbsp;&nbsp;<span>20</span>
+						</td>
+						<td class="positionAnchor infoCell padTop noBorderBottom">
+							<span class="subtitle">Priority</span>&nbsp;&nbsp;<span>0</span>
+						</td>
+						<td class="positionAnchor infoCell padTop noBorderBottom">
+							<span class="subtitle">Targets</span>&nbsp;&nbsp;<span>1m x 20m line originating from the user</span>
+						</td>
+					</tr>
+				</table>
+				<table class="wide">
+					<tr>
+						<td class="positionAnchor infoCell padTop noBorderBottom">
+							<span class="subtitle">Description</span>&nbsp;&nbsp;<span>The user of Petal Dance attacks for 3 turns (including this one), during which it loses its regular action (but not movement), and then becomes confused. A new target may be chosen for each attack. The user cannot cancel the move on their own. However, if Petal Dance is disrupted (e.g. if the move misses, the user flinches, the user cannot attack due to paralysis, or no more targets are within range) then it will stop and not cause confusion. Pokémon with the ability Own Tempo or those behind a Substitute cannot be confused.</span>
+						</td>
+					</tr>
+				</table>
+				<table class="wide">
+					<tr>
+						<td class="positionAnchor infoCell padTop noBorderBottom">
+							<span class="subtitle">Name</span>&nbsp;&nbsp;<span>Petal Dance</span>
+						</td>
+						<td class="positionAnchor infoCell padTop noBorderBottom">
+							<span class="subtitle">Type</span>&nbsp;&nbsp;<span>Grass</span>
+						</td>
+						<td class="positionAnchor infoCell padTop noBorderBottom">
+							<span class="subtitle">Category</span>&nbsp;&nbsp;<span>Special</span>
+						</td>
+						<td class="positionAnchor infoCell padTop noBorderBottom">
+							<span class="subtitle">Power</span>&nbsp;&nbsp;<span>70</span>
+						</td>
+						<td class="positionAnchor infoCell padTop noBorderBottom">
+							<span class="subtitle">Atk.&nbsp;Dice</span>&nbsp;&nbsp;<span>3</span>
+						</td>
+						<td class="positionAnchor infoCell padTop noBorderBottom">
+							<span class="subtitle">Accuracy</span>&nbsp;&nbsp;<span>20</span>
+						</td>
+						<td class="positionAnchor infoCell padTop noBorderBottom">
+							<span class="subtitle">Priority</span>&nbsp;&nbsp;<span>0</span>
+						</td>
+						<td class="positionAnchor infoCell padTop noBorderBottom">
+							<span class="subtitle">Targets</span>&nbsp;&nbsp;<span>1m x 20m line originating from the user</span>
+						</td>
+					</tr>
+				</table>
+				<table class="wide">
+					<tr>
+						<td class="positionAnchor infoCell padTop">
+							<span class="subtitle">Description</span>&nbsp;&nbsp;<span>The user of Petal Dance attacks for 3 turns (including this one), during which it loses its regular action (but not movement), and then becomes confused. A new target may be chosen for each attack. The user cannot cancel the move on their own. However, if Petal Dance is disrupted (e.g. if the move misses, the user flinches, the user cannot attack due to paralysis, or no more targets are within range) then it will stop and not cause confusion. Pokémon with the ability Own Tempo or those behind a Substitute cannot be confused.</span>
+						</td>
+					</tr>
+				</table>
+			</tr>
+			</td>
+			</table>
+		</div>
+	</body>
+</html>
